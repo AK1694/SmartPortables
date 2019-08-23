@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Smart Portables</title>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css' >
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel='stylesheet' href='carousalstyle.css'>
+	<script>
+<!-- jqurey script -->
+$(document).ready(function(){
+
+	$('#myCarousel').carousel({
+  interval: 3000
+})
+
+$('.carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+});
+});
+</script>
+<script type="text/javascript" src="javascript.js"></script>
+<style>
+* {
+		box-sizing : unset;
+	}
+	
+.col-md-6{
+		width : 45% ! important;
+	}
+</style>	
+
+
+</head>
+
+<body onload="init()">
+    <div id="container">
+        <header>
+            <h1><a href="Home">Smart <span>Portables</span></a></h1>
+            <h2>The best retailer website for smart devices!! </h2>
+        </header>
+        
+          	<div name="autofillform" style=" margin: auto; position: relative; left: 35%; bottom: 35px;">
+              <b style="font-size: 27px;color:black">Search Product: </b>
+                	<input type="text" name="searchId" value="" class="input"
+					id="searchId" onkeyup="doCompletion()" 
+                	 placeholder="Search here.." style="padding: 5px; font-size: 16px; width:325px;" />
+                  		<div id="auto-row">
+                  		    <table id="complete-table" class="gridtable" style="position: absolute; width:325px; margin-left:200px; background-color: beige;"></table>
+                  		</div>
+          	</div>
+ 
+        <nav>
+            <ul>
+              <li><a href="Home"><span class="glyphicon glyphicon-home">Home</span></a></li>
+              <li><a href="WearableTechnologyList"><span class="glyphicon">Wearable Technology</span></a></li>
+              <li><a href="PhonesList"><span class="glyphicon">Phones</span></a></li>
+              <li><a href="LaptopList"><span class="glyphicon">Laptops</span></a></li>
+              <li><a href="SmartSpeakerList"><span class="glyphicon">Smart Speakers</span></a></li>
+			  
+            
+			
+    

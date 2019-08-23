@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+
+  <display-name>Smart Portables</display-name>
+
+  <!-- See the welcome-file Reference Material here: http://www.javatpoint.com/welcome-file-list -->
+  <welcome-file-list>
+    <welcome-file>Home</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+    <servlet-name>Startup</servlet-name>
+    <servlet-class>Startup</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+  <servlet>
+    <servlet-name>Home</servlet-name>
+    <servlet-class>Home</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Home</servlet-name>
+    <url-pattern>/Home</url-pattern>
+  </servlet-mapping>
+
+
+<servlet>
+    <servlet-name>WearableTechnology</servlet-name>
+    <servlet-class>WearableTechnology</servlet-class>
+</servlet>
+
+  <servlet-mapping>
+    <servlet-name>WearableTechnology</servlet-name>
+    <url-pattern>/WearableTechnology</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Phone</servlet-name>
+    <servlet-class>Phone</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Phone</servlet-name>
+    <url-pattern>/Phone</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Laptop</servlet-name>
+    <servlet-class>Laptop</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Laptop</servlet-name>
+    <url-pattern>/Laptop</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SmartSpeaker</servlet-name>
+    <servlet-class>SmartSpeaker</servlet-class>
+</servlet>
+
+  <servlet-mapping>
+    <servlet-name>SmartSpeaker</servlet-name>
+    <url-pattern>/SmartSpeaker</url-pattern>
+  </servlet-mapping>
+
+
+    <servlet>
+    <servlet-name>ViewItem</servlet-name>
+    <servlet-class>ViewItem</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ViewItem</servlet-name>
+    <url-pattern>/ViewItem</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>WriteReview</servlet-name>
+    <url-pattern>/WriteReview</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DataVisualisation</servlet-name>
+    <servlet-class>/DataVisualisation</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DataVisualisation</servlet-name>
+    <url-pattern>/DataVisualisation</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>FindReview</servlet-name>
+    <servlet-class>/FindReview</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>FindReview</servlet-name>
+    <url-pattern>/FindReview</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Review</servlet-name>
+    <servlet-class>/Review</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Review</servlet-name>
+    <url-pattern>/Review</url-pattern>
+  </servlet-mapping>
+ 
+  
+  
+  
+  
+  
+  
+
+</web-app>
